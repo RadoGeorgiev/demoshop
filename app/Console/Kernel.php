@@ -17,7 +17,6 @@ class Kernel extends ConsoleKernel
             // Call the fetchDataAndSave method
             ExternalDataController::fetchDataAndSave();
         })->twiceDaily(5, 17); // Adjust the schedule as needed
-        // })->everySecond(); // Adjust the schedule as needed
     }
 
     /**

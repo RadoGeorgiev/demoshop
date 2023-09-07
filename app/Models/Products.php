@@ -5,21 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-/**
- * Temporary store api data
- */
-class ExternalData extends Model
+class Products extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'product_id',
+        'group_id',
         'product_image_sm',
-        'product_image_md',
-        'product_image_lg',
         'product_type',
         'product_name',
-        'product_department',
         'product_departmentId',
         'product_stock',
         'product_color',
@@ -27,6 +21,7 @@ class ExternalData extends Model
         'product_material',
         'product_ratings',
         'product_sales',
+        'product_variation_ids',
     ];
 
     public $timestamps = false;
